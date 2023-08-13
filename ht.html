@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "lato", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#register" class="w3-button w3-block w3-black">REGISTER</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Content -->
+<table>
+<tr>
+<td>
+ <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="C:\Users\sharm\OneDrive\Pictures\a1.jfif" alt="Buildings" width="500" height="600" float="left">
+    </div>
+</td>
+<td>
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col
+     <div class="w3-panel">
+<h1><center><b>KAMARAJ</b></center></h1>
+    <h2><center><b>COLLEGE OF ENGINEERING AND TECHNOLOGY</b></center></h2>
+	<h3><center>(Autonomous)</center></h3>
+<h4><center>S.P.G Chidambara Nadar-C.Nagammal Campus,<br>
+S.P.G.C Nagar,K.Vellakulam-625 701 (Near VIRUDHUNAGAR).</center></h4>
+  </div>
+    </div>
+</div>
+<td>
+<img class="w3-image w3-round-large" src=<td>
+<img class="w3-image w3-round-large" src="C:\Users\sharm\OneDrive\Pictures\n2.png"  width="300" height="300" float="left">
+</td> alt="Buildings" width="200" height="300" float="left">
+</td>
+<td>
+<img class="w3-image w3-round-large" src="C:\Users\sharm\OneDrive\Pictures\Screenshots\n1.png" alt="Buildings" width="300" height="300" float="left">
+</td>
+  </td>
+</tr>
+</table>
+  
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 30px;
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+      <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.box {
+  background-color: darkblue;
+  width: 900px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 100px;
+}
+</style>
+</head>
+<body>
+ 
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col
+     <div class="w3-panel">
+  <marquee width="100%" direction="left" height="100px">
+    <h1><hr>DEPARTMENT OF INFORMATION TECHNOLOGY</h1></hr>
+    </marquee> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pic5.jpeg" style="width:100%">
+  <div class="text">Entrance</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pic1.jpeg" style="width:100%">
+  <div class="text">Day</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="pic2.jpeg" style="width:100%">
+  <div class="text"><Hdr></Hdr>Happy</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+</div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<center>
+  <video width="1000" height="250" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</center>  
+</body>
+
+ 
+
+
+<div class="container" id="register">
+  <div style="text-align:center">
+    <h2>NEW REGISTRATION</h2>
+    <p><b>Students fill their details properly:</b></p>
+  </div>
+            <table align="center">
+                <tr>
+                <td width="100"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3yVeSLaE2OplVJ9D5ryWGqiIA9M9wddUNg&usqp=CAU"></td>
+               
+                </tr>
+               
+  
+
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your last name..">
+        <label for="dob">Date of Birth</label>
+        <input type="text" id="dob" name="dob" placeholder="Your dob..">
+        <label for="mark1">SSLC MARK</label>
+        <input type="text" id="mark1" name="mark1" placeholder="Your 10th mark">
+          <label for="mark2">HSC MARK</label>
+        <input type="text" id="mark2" name="mark2" placeholder="Your 12th mark">
+        <label for="jyear">Year of Joining</label>
+        <input type="text" id="jyear" name="jyear" placeholder="joining year...">
+        <label for="country">department</label>
+        <select id="country" name="country">
+          <option value="select">---Select any one dept---</option>s
+          <option value="it">INFORMATION TECHNOLOGY</option>
+          <option value="csc">COMPUTER SCIENCE</option>
+          <option value="civil">CIVIL</option>
+        </select>
+        <label for="subject">Year of Studying</label>
+         <input type="text" id="yname" name="yname" placeholder="Year...">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+<!DOCTYPE html>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<center>
+    <br>
+
+
+ 
+<table>
+
+  <tr>
+  <td>
+   <div class="gallery">
+       <a target="#" href="index.html">
+       <img src="vakai.png" alt="Cinque Terre" width="600" height="200">
+       </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b> Dr.E.Vaikaimala,Ph.Dr</b></b></div>
+    </div>
+  </td>  
+  
+
+    <td>
+       <div class="gallery">
+       <a target="#" href="index.html">
+       <img src="kaviya.png" alt="Forest" width="600" height="200">
+       </a>
+       <div class="desc"><b style="color:darkgoldenrod"><b>MS.P.kaviya,M.Tech</b></b></div>
+      </div>\
+    </td>  
+
+    
+    <td> 
+        <div class="gallery">
+        <a target="#" href="index.html">
+        <img src="C:\Users\sharm\Downloads\arthy.png" alt="Northern Lights" width="600" height="200">
+        </a>
+        <div class="desc"><b style="color:darkgoldenro"><b>Dr.R.Arthy,Ph.D<br></b></b></div>
+        </div>
+    </td>    
+   
+   
+    <td>
+      <div class="gallery">
+      <a target="#" href="index.html">
+      <img src="C:\Users\sharm\Downloads\agila.png" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b>Dr.R.Aghila,Ph.D<br></b></b></div>
+      </div>
+    </td>
+  </tr>
+
+<tr>
+  <td>
+    <div class="gallery">
+      <a target="#" href="index.html">
+        <img src="C:\Users\sharm\Downloads\deepa.png" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b>MRS.V.Deepa priya,M.E(Ph.D)</b></b></div>
+    </div>
+  </td>
+  
+  <td>
+    
+    <div class="gallery">
+      <a target="#" href="index.html">
+        <img src="vendahn.png" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b>MRS.D.Vendhan,M.Tech.(Ph.D)</b></b></div>
+    </div>
+  </td>
+
+  <td>
+    <div class="gallery">
+      <a target="#" href="index.html">
+        <img src="raj.png" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b>MRS.C.Rajakannan,M.E</b></b></div>
+    </div>
+  </td>  
+    
+  <td>
+    <div class="gallery">
+      <a target="#" href="index.html">
+        <img src="C:\Users\sharm\Downloads\ram.png" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc"><b style="color:darkgoldenrod"><b>Mr.Ram Ganeshan.G.H.M.E,</b></b></div>
+    </div>
+  </td>  
+</tr>
+
+<tr>
+<td>
+  <div class="gallery">
+    <a target="#" href="index.html">
+      <img src="C:\Users\sharm\Downloads\maha.png" alt="Mountains" width="600" height="200">
+    </a>
+    <div class="desc"><b style="color:darkgoldenrod"><b>MRS.P.Mahalakshmi,M.E</b></b></div>
+  </div>
+</td>
+<td> 
+  
+  <div class="gallery">
+    <a target="#" href="index.html">
+      <img src="priya.png" alt="Mountains" width="600" height="200">
+    </a>
+    <div class="desc"><b style="color:darkgoldenrod"><b>MRS.P.Priyadharshini,M.E</b></b></div>
+  </div>
+</td>   
+<td> 
+  <div class="gallery">
+    <a target="#" href="index.html">
+      <img src="gaya.png" alt="Mountains" width="600" height="200">
+    </a>
+    <div class="desc"><b style="color:darkgoldenrod"><b>MRS.S.Gayathiri,M.E</b></b></div>
+  </div>
+</td> 
+<td> 
+  <div class="gallery">
+    <a target="#" href="index.html">
+      <img src="arun.png" alt="Mountains" width="600" height="200">
+    </a>
+    <div class="desc"><b style="color:darkgoldenrod"><b>MR.S.Arun Prasad,M.Tech</b></b></div>
+  </div>
+</td> 
+</tr>
+<tr>
+  <td>
+       <div class="gallery">
+       <a target="#" href="index.html">
+       <img src="kaya.png"alt="Mountains" width="600" height="200">
+       </a>
+       <div class="desc"><b style="color:darkgoldenrod"><b>MRS.v.Gayathiri,M.E</b></b></div>  
+  </td>     
+  
+</tr>
+</table>    
+</div>
+</center>
+
+</body>
+</html>
+ <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">DEPARTMENT ACHIVEMENTS</span>
+    </div>
+	<p><center>Welcome to the IT Department at Kamaraj College of Engineering and Technology Our department is at the forefront of the ever-evolving field of Information Technology, 
+empowering individuals and organizations to thrive in the digital age. With a legacy dating back to our establishment in 2001, we have been consistently delivering
+ exceptional education and producing high-calibre technocrats. Our team consists of twelve vibrant and highly qualified faculty members who possess expertise in various
+ domains of Information Technology. Among them, three faculty members have successfully completed their doctoral degrees and four faculty members are actively pursuing their doctorates.
+</center></p>
+
+<div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">STUDENTS ACHIVEMENTS</span>
+    </div>
+
+ <p> DhanasekaraPandian.G of III IT secured Second Prize for the event “MEME Creation” at MISRIMAL NAVAJEE MUNOTH JAIN Engineering College on 01.06.2022
+Pandiraja P, Santhosh G, Venkatesh Prabhu R of III IT won second prize on “ Top Coders’22” at Sutharson Engineering College, Coimbatore on 22.04.2022
+Karthikeyan R of III IT won Third Prize on the photography event of Infosparks 2K22 at Kalasalingam Academy of Research and Education on 29.04.2022
+Gokula Indira R of III IT secured First place in Intercollege Dance Competition at Kalasalingam University on the month of April 2022>Ananthan C.P of III IT secured First
+place in Intercollege Dance Competition at Kalasalingam University on the month of April 2022
+</p>
+ <style>
+
+  .box {
+
+  width: 900px;
+  height: 700px;
+  border: 15px solid skyblue;
+  padding: 50px;
+  margin: 10px;
+}
+  .img {
+    max-width: 15%;
+    max-height:25%;
+    float: left;
+  }
+</style>
+
+<body>
+<center>
+    <div class="box">
+        <h1 style="color:black;" align="center">EXTRA CRICULAR </h1>
+            <table align="center">
+            <tr>
+            <td width="100"><img src="sub.png"></td>
+            <td width="100"> <img src="arthi.png"></td>
+            <td width="100"> <img src="sharmi1.png"></td>
+           
+
+  width: 800px;
+  height: 500px; </tr>
+            </table>
+   <h3 style="color:pink;" >The Students Who had participated and won Third Prize in Anna University Volley Ball Tournament<br>,which is held in Bharath Niketan Engineering And Polytechnic College,Theni</h3>
+            <br>
+            <table align="center">
+               
+                </table>
+           </div>
+</center>
+<style>
+
+  .box1 {
+  border: 15px  lightblue;
+  padding: 50px;
+  margin: 10px;
+}
+  .img {
+    max-width: 40%;
+    max-height:30%;
+    float: left;
+  }
+</style>
+<body>
+    <div class="box1">
+        <h1 style="color:red;" align="center">NON-TECHNICAL EVENT</h1>
+            <table align="center">
+            <tr>
+            <td width="100"><img src="C:\Users\sharm\Downloads\meena.jpeg" width="300" height="250"></td>
+            <h3 style="color:black;" >Meenakshi is participated and won first Prize in 5 minutes,which is held in Karpagam  College of Engineering And technology,coimbatore</h3>
+            
+        </table>    
+</body>
+<!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+
+</div>
+
+<!-- Footer >
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  <!-- Footer -->
+
+<div class="w3-xlarge w3-section">
+<table width="50%">
+      <tr>
+      <td><img src="C:\Users\sharm\OneDrive\Pictures\a1.jfif"></td>
+ <td><center>KAMARAJ COLLEGE OF ENGINEERING & TECHNOLOGY</center><br>
+        <center>S.P.G.Chidambara nadar - C.Nagammal Campus</center><br>
+       <center> S.P.G.C. Nagar, K.Vellakulam-625 701, Near Virudhunagar</center></td><br><br><td><br></td>
+      
+      
+      </tr>
+  </table>
+ <td><img src= "C:\Users\sharm\OneDrive\Pictures\proj1.JPG" width="100%" height="100%" ></td>
+ <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="http://www.kamarajengg.edu.in/" class="fa fa-google"></a>
+      <a href="https://www.linkedin.com/school/kamarajeng/" class="fa fa-linkedin"></a>
+      <a href="https://youtube.com/@kvedha.vk7538" class="fa fa-youtube"></a>
+      <a href="https://instagram.com/kamarajeng?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+</head>
+</html>
+  <p>Powered by <a href="http://www.kamarajengg.edu.in/" title="---sharmii---" target="_blank" class="w3-hover-text-green">--sharmi---</a></p>
+</footer>
+
+<script>
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
